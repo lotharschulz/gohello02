@@ -1,5 +1,3 @@
-# gohello02
-
 simple hello world server project using [hellogopher](https://github.com/cloudflare/hellogopher) make:
 ```
 $ make
