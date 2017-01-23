@@ -15,9 +15,9 @@ all: build
 build: .GOPATH/.ok
 	$Q go install $(if $V,-v) $(VERSION_FLAGS) $(IMPORT_PATH)
 
-.PHONY: source
-otherbin: .GOPATH/.ok
-	$Q go install $(if $V,-v) $(VERSION_FLAGS) $(IMPORT_PATH)/cmd/source
+.PHONY: sources
+sources: .GOPATH/.ok
+	$Q go install $(if $V,-v) $(VERSION_FLAGS) $(IMPORT_PATH)/src
 
 ##### ^^^^^^ EDIT ABOVE ^^^^^^ #####
 
