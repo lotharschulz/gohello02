@@ -9,11 +9,7 @@ V := 1 # When V is set, print commands and build progress.
 IGNORED_PACKAGES := /vendor/
 
 .PHONY: all
-all: build
-
-.PHONY: build
-build: .GOPATH/.ok
-	$Q go install $(if $V,-v) $(VERSION_FLAGS) $(IMPORT_PATH)
+all: sources
 
 .PHONY: sources
 sources: .GOPATH/.ok
